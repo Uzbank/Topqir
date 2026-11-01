@@ -1,0 +1,13 @@
+{
+  "appId": "uz.topqir.app",
+  "appName": "Topqir",
+  "webDir": "www",
+  "backgroundColor": "#1C1348",
+  "android": {
+    "backgroundColor": "#1C1348"
+  },
+  "ios": {
+    "backgroundColor": "#1C1348",
+    "contentInset": "never"
+  }
+}

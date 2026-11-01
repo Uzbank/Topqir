@@ -1,0 +1,29 @@
+{
+  "name": "topqir",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Топқир — ўзбек ва рус тилларидаги шарада (Крокодил) ўйини",
+  "scripts": {
+    "build": "node scripts/copy-fonts.mjs",
+    "android": "npm run build && npx cap sync android && npx cap open android",
+    "ios": "npm run build && npx cap sync ios && npx cap open ios",
+    "serve": "npx --yes http-server www -p 8080 -c-1"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/app": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/haptics": "^7.0.0",
+    "@capacitor/ios": "^7.0.0",
+    "@capacitor/screen-orientation": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.0.0",
+    "@fontsource/manrope": "^5.0.0",
+    "@fontsource/unbounded": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
